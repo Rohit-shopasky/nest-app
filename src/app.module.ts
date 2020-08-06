@@ -18,7 +18,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   MongooseModule.forRoot('mongodb+srv://root:root@cluster0-hg20y.mongodb.net/test?retryWrites=true&w=majority')
 ],
   
- // controllers: [AppController, PostHelloController],
- // providers: [AppService, PostHelloService],
+  controllers: [AppController, PostHelloController],
+  providers: [AppService, PostHelloService],
 })
 export class AppModule {}
